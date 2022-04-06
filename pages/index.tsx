@@ -6,7 +6,6 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import { GetStaticProps } from 'next'
 
-
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
   return {
@@ -15,7 +14,6 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
 }
-
 
 export default function Home({ allPostsData }) {
   return (
